@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Appliance Energy Website - Televisions</title>
+  <title>Television Energy Consumption Story</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -12,46 +12,80 @@
     </a>
     <nav>
       <a data-page="index">Home</a>
-      <a data-page="televisions">Televisions</a>
+      <a data-page="televisions" class="active">Televisions</a>
       <a data-page="about_us">About Us</a>
     </nav>
   </header>
 
   <main>
-    <h1>Televisions Energy Consumption</h1>
+    <h1>Buying a New TV? Let’s Explore Energy Efficiency</h1>
 
-    <section class="content-box">
-      <h2>Understanding the Energy Rating Label</h2>
-      <p>The Energy Rating Label is a mandatory label on most new appliances sold in Australia. For televisions, it helps you compare the energy efficiency of different models. The label shows two key pieces of information:</p>
-      <ul>
-        <li><b>Star Rating:</b> The more stars on the label, the more energy-efficient the television is. A higher star rating means lower running costs and a smaller environmental impact.</li>
-        <li><b>Energy Consumption:</b> This number, measured in kilowatt-hours per year (kWh/year), indicates the estimated annual energy consumption. The lower the number, the better.</li>
-      </ul>
-      <p>Always compare the energy consumption of televisions with a similar screen size, as larger TVs will naturally use more energy.</p>
+    <!-- INTRO PANEL -->
+    <section class="content-box intro">
+      <p><strong>Buying a new TV?</strong> Screen size, brand, and features matter — but energy consumption affects your electricity bills every day.</p>
+      <p>This page helps consumers understand TV options, sizes, brands, and energy use so they can make smarter choices.</p>
+      <p class="transition">Let’s begin by looking at the types of TVs available in Australia.</p>
     </section>
 
+    <!-- STEP 1: Screen Technologies -->
     <section class="content-box">
-      <h2>How to Calculate Your TV's Energy Cost</h2>
-      <p>You can estimate your television's energy consumption and annual running cost using a simple formula. You will need your TV's estimated annual energy consumption from its Energy Rating Label (in kWh/year) and your electricity cost per kWh.</p>
-      
-      <div class="calculation-formula">
-        <h3>Estimated Annual Cost Formula:</h3>
-        <p><b>Annual Cost ($)</b> = (Annual Energy Consumption (kWh) × Electricity Cost (cents per kWh)) / 100</p>
+      <h2>What types of screen technologies are available?</h2>
+      <div class="chart-box" id="chart-tech">
+        <img src="images\ScreenTechnologies.png" alt="Pie Chart showing TV models by technology" width="100%">
       </div>
-
-      <p>For example, if a TV's Energy Rating Label shows an annual consumption of 150 kWh and your electricity cost is 30 cents per kWh, the calculation would be:</p>
-      <p>(150 kWh × 30 cents) / 100 = $45</p>
-      <p>Your estimated annual running cost for that TV would be $45.</p>
+      <p>Most models in Australia are LCD (LED), while OLEDs and LCDs are less frequent.</p>
+      <p class="transition">Once you know the types, the next step is choosing the right size and brand.</p>
     </section>
 
+    <!-- STEP 2: Screen Sizes -->
     <section class="content-box">
-      <h2>Tips to Reduce TV Energy Consumption</h2>
+      <h2>What screen sizes are most common?</h2>
+      <div class="chart-box" id="chart-size">
+        <img src="images/ScreenSizes.png" alt="Bar Chart showing distribution of TV screen sizes" width="100%">
+      </div>
+      <p>A wide range of TV screen sizes are currently available, from smaller models such as 16–20 inches up to larger sizes like 100–116 inches. The most frequent sizes are 55”, 65”, and 75”.</p>
+      <p class="transition">After deciding on size, the next key factor is the brand.</p>
+    </section>
+
+    <!-- STEP 3: Brands -->
+    <section class="content-box">
+      <h2>Which brands have the largest number of models?</h2>
+      <div class="chart-box" id="chart-brand">
+        <img src="images/Brands.png" alt="Bar Chart showing number of TV models by brand" width="100%">
+      </div>
+      <p>Different brands offer a range of models with varying screen technologies and energy ratings. Some brands, like <strong>LG</strong>, <strong>Samsung</strong>, and <strong>Kogan</strong>, provide a wider selection of energy-efficient models, giving consumers more choices.</p>
+      <p class="transition">Now that we’ve explored what’s available, it’s time to see how these features translate into everyday energy use.</p>
+    </section>
+
+    <!-- STEP 4: Energy Use by Technology -->
+    <section class="content-box">
+      <h2>Which technologies are actually the most energy-efficient?</h2>
+      <div class="chart-box" id="chart-energy-tech">
+        <img src="images/EnergyUseByScreenTech.png" alt="Bar Chart showing average power consumption by TV technology" width="100%">
+      </div>
+      <p>The screen technology that consumes the least amount of power is <strong>LCD</strong>, making it the most energy-efficient choice.</p>
+      <p class="transition">Of course, TV size also matters — bigger screens usually use more energy. Let’s check.</p>
+    </section>
+
+    <!-- STEP 5: Screen Size vs Power -->
+    <section class="content-box">
+      <h2>How does screen size affect power use?</h2>
+      <div class="chart-box" id="chart-size-power">
+        <img src="images/ScreenSizeAgainstPowerUsage.png" alt="Scatter Plot showing screen size versus power consumption" width="100%">
+      </div>
+      <p>As the screen size increases, the average power consumption generally increases. <strong>Bigger TVs = bigger bills.</strong></p>
+      <p class="transition">So what does this mean for consumers? Let’s summarise.</p>
+    </section>
+
+    <!-- CONCLUSION -->
+    <section class="content-box conclusion">
+      <h2>Recommendations for TV Buyers</h2>
       <ul>
-        <li><b>Adjust Brightness:</b> Lowering the brightness of your TV can significantly reduce its energy use.</li>
-        <li><b>Use Sleep Timers:</b> If you often fall asleep while watching, set a sleep timer to automatically turn the TV off.</li>
-        <li><b>Unplug or Use a Power Strip:</b> Televisions consume a small amount of "standby" power even when turned off. Unplugging it or using a power strip you can switch off will eliminate this.</li>
-        <li><b>Enable Eco-Modes:</b> Many modern TVs have "Eco" or "Energy Saving" modes that automatically adjust settings to optimize for lower energy consumption.</li>
+        <li><strong>Choose LCD (LED)</strong> if energy efficiency is your main concern.</li>
+        <li><strong>Smaller screens</strong> mean lower power bills.</li>
+        <li><strong>Popular brands</strong> offer variety, but focus on screen size and technology to save energy and money.</li>
       </ul>
+      <p>Choose the right TV for your needs: balance size, features, and long-term energy savings.</p>
     </section>
   </main>
 
@@ -59,7 +93,7 @@
     <span>&copy; 2025 Elaine Ho Yung Hui</span>
     <span>Built with assistance from GenAI for starter code/content</span>
   </footer>
-  
+
   <script src="script.js"></script>
 </body>
 </html>

@@ -119,3 +119,114 @@ footer {
   color: #f7f7f7;
   font-size: 14px;
 }
+
+/* Television Page specific styles */
+main {
+  max-width: 1000px;
+  margin: 2rem auto;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+}
+
+.content-box {
+  background-color: #fcfcfc;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 1.8rem;
+  margin-bottom: 2rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.content-box:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 14px rgba(0, 0, 0, 0.05);
+}
+
+.content-box h2 {
+  color: #333;
+  margin-bottom: 1rem;
+  border-left: 5px solid #e67e22;
+  padding-left: 0.7rem;
+  font-size: 1.4rem;
+}
+
+.chart-box {
+  text-align: center;
+  margin: 1.5rem 0;
+}
+
+.chart-box img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.chart-box img:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+.transition {
+  font-style: italic;
+  color: #666;
+  margin-top: 1rem;
+  border-left: 3px solid #ffd700;
+  padding-left: 0.8rem;
+  background-color: #fffbea;
+  border-radius: 4px;
+}
+
+.conclusion ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  margin-top: 1rem;
+}
+
+.conclusion li {
+  margin-bottom: 0.6rem;
+  font-size: 1.05rem;
+}
+
+.conclusion strong {
+  color: #e67e22;
+}
+
+.content-box {
+  opacity: 0;
+  transform: translateY(10px);
+  animation: fadeIn 0.8s ease forwards;
+}
+
+.content-box:nth-child(2) { animation-delay: 0.2s; }
+.content-box:nth-child(3) { animation-delay: 0.4s; }
+.content-box:nth-child(4) { animation-delay: 0.6s; }
+.content-box:nth-child(5) { animation-delay: 0.8s; }
+.content-box:nth-child(6) { animation-delay: 1s; }
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(15px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 768px) {
+  main {
+    padding: 1rem;
+  }
+
+  .content-box {
+    padding: 1.2rem;
+  }
+
+  h1 {
+    font-size: 1.6rem;
+    text-align: center;
+  }
+
+  .chart-box img {
+    border-radius: 6px;
+  }
+}
